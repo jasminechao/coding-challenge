@@ -28,4 +28,15 @@ $(document).ready(function() {
       }
     });
   });
+
+  $.ajax({
+    type: "GET",
+    url: "https://maps.googleapis.com/maps/api/geocode/json?address=berlin&key=AIzaSyB1afBnbrfwQXMzS2gi4XEm1FbNR5CFudg",
+    success: function(data) {
+      initMap(52.5200066, 13.404954)
+    },
+    error: function(jqXHR) {
+      console.error(jqXHR.responseText);
+    }
+  })
 });
