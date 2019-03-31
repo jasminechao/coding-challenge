@@ -25,6 +25,8 @@ $(document).ready(function() {
       },
       error: function(jqXHR) {
         console.error(jqXHR.responseText);
+        document.getElementById('invalidAddress').classList.remove('d-none');
+        document.getElementById('invalidAddress').classList.add('d-block');
       }
     });
   });
