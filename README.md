@@ -26,8 +26,6 @@ Clone the repo
 
 Create `.env` and drop in your personal Google Maps API key.
 
-Run the server
-
     GOOGLE_API_KEY=[YOURKEY]
 
 Run the server
