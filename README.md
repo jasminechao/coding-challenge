@@ -24,8 +24,14 @@ Clone the repo
 
     git clone git@github.com:jasminechao/coding-challenge.git
 
+Create `.env` and drop in your personal Google Maps API key.
+
+Run the server
+
+    GOOGLE_API_KEY=[YOURKEY]
+
 Run the server
 
     shotgun
 
-Go to [http://127.0.0.1:9393](http://127.0.0.1:9393) (you may need to reload)
+Go to [http://127.0.0.1:9393](http://127.0.0.1:9393)
