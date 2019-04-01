@@ -25,12 +25,13 @@
           *Please enter a valid address
           </small>
 
+      <div id="searchAddress"></div>
       <div id="map" class="p-auto" style="height: 70vh; width: 70vw;"></div>
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB1afBnbrfwQXMzS2gi4XEm1FbNR5CFudg"></script>
-    <script src="/application.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=<%= @apiKey %>"></script>
+    <script src="/application.js.erb"></script>
   </body>
 </html>
