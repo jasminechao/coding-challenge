@@ -1,13 +1,15 @@
-require "sinatra"
-require "sinatra/reloader" if development?
+require "sinatra/base"
 require "pry-byebug"
 require "better_errors"
-configure :development do
-  use BetterErrors::Middleware
-  BetterErrors.application_root = File.expand_path('..', __FILE__)
-  set :public_folder, File.expand_path('../public', __FILE__)
-end
 
-get '/' do
-  erb :index
+class MyApp < Sinatra::Base
+  get '/' do
+    @apiKey  = ENV['GOOGLE_API_KEY']
+    erb :index
+  end
+
+  configure do
+    set :app_file, __FILE__
+  end
+
 end
